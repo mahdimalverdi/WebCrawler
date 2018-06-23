@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>433</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+font: 8pt &quot;IRANSans&quot;;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout" columnstretch="2,2,2,0,2,0" columnminimumwidth="0,0,0,0,0,0">
+    <item row="5" column="4" colspan="2">
+     <widget class="QListWidget" name="listWidgetDownloadeds"/>
+    </item>
+    <item row="4" column="4" colspan="2">
+     <widget class="QLabel" name="labelDownloadeds">
+      <property name="text">
+       <string>دانلود شده ها</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLabel" name="labelLinks">
+      <property name="text">
+       <string>لینک ها</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1" colspan="5">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>دانلودی در جریان نیست</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QComboBox" name="comboBoxLevel">
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLabel" name="labelWords">
+      <property name="text">
+       <string>کلمات :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QListWidget" name="listWidgetFiltred"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="labelFiles">
+      <property name="text">
+       <string>فایل ها</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="6">
+     <widget class="QLineEdit" name="lineEditUrl"/>
+    </item>
+    <item row="1" column="0" colspan="6">
+     <widget class="QPushButton" name="pushButtonDownload">
+      <property name="text">
+       <string>شروع پیمایش</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QListWidget" name="listWidgetFiles"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="pushButtonSearch">
+      <property name="text">
+       <string>جست و جو</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>سطح جستجو :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="labelFiltred">
+      <property name="text">
+       <string>فیلتر شده ها</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2" colspan="2">
+     <widget class="QListWidget" name="listWidgetLinks"/>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QLineEdit" name="lineEditWords"/>
+    </item>
+    <item row="10" column="0" colspan="6">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+    <item row="9" column="0" colspan="5">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="textVisible">
+       <bool>true</bool>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+      <property name="textDirection">
+       <enum>QProgressBar::TopToBottom</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="5">
+     <widget class="QLabel" name="labelSpeed">
+      <property name="text">
+       <string>0 bytes/sec</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
